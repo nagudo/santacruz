@@ -1,8 +1,9 @@
 :root {
-    --primary:  #ee8a1e;
-    --text:     #1a1a1a;
+    --primary:  #a6b272;
+    --text:     #333333;
 
-    --blue-rgb:       0, 0, 225;
+    --green-rgb:      122, 186, 67;
+    --blue-rgb:       63, 154, 230;
     --red-rgb:        225, 0 ,0;
     --black-rgb:      0, 0 , 0;
 
@@ -13,6 +14,7 @@
     --black:        #000;
 
     /* Dificulty colors (in RGB)*/
+    --easy: var(--green-rgb);
     --medium: var(--blue-rgb);
     --hard: var(--red-rgb);
     --very-hard: var(--black-rgb);
@@ -21,8 +23,9 @@
     --text-s:   .75rem;
     --text-m:   1rem;
     --text-l:   1.25rem;
+    --text-xl:   1.75rem;
 
-    --font-magenta: 'MagentaFont', Helvetica, Arial, sans-serif;
+    --font-pwscratchedfont: 'PWScratchedfont', Helvetica, Arial, sans-serif;
     --font-helvetica--light: 'HelveticaNeue Light', Helvetica, Arial, sans-serif;
 
     --line-height-s: calc(1.35 * var(--text-s));
@@ -35,5 +38,5 @@
     --space-l: 1.25em;
 
     /* Roundness */
-    --radius: .25em;
+    --radius: .5em;
 }

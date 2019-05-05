@@ -18,12 +18,12 @@
 <body>
     <div class="app about">
         <div class="c-nav">
-            <img class="c-nav__img" src="img/nav.svg" alt="nav.svg" title ="Eremua - menu" />
+            <div class="c-nav__bg"></div>
             <div class="c-nav__wrapper">
                 <div id="navButton" class="c-nav__button">
                     <div class="c-nav__button--bar"></div>
                 </div>
-                <span class="c-nav__lang--active u-text--primary u-text--small">ESPAÑOL</span>
+                
                 <a href="contact_eu.html" title="Cambiar idioma" class="c-nav__lang u-text--primary u-text--small">EU</a>
             </div>
             <div class="o-nav__menu">
@@ -41,7 +41,9 @@
             </div>
         </div>
         <div class="l-page u-text--center about__wrapper">
-            <h2>CONTACTO</h2>
+            <div class="l-page__item--out">
+                <h2>CONTACTO</h2>
+            </div>
             <div class="u-clear--s"></div>
                 <p>
                     Quieres dejarnos algún comentario o sugerencia sobre el estado de las rutas, señalización o cualquier otra cuestión, ¡aquí tienes tu espacio!
@@ -71,10 +73,13 @@
                     <textarea placeholder="Escribe tu mensaje" name="mensaje"></textarea>
                 </div>
                 <div class="u-clear--s"></div>
-                <input type="submit" class="c-button c-button--primary" id="submit"  name="submit" value="Enviar"></input>
+                <div class="l-page__item--out ">
+                    <input type="submit" class="c-button c-button--primary" id="submit" name="submit" value="Enviar"></input>
+                </div>
             </form>
             <div class="u-clear--s"></div>
         </div>
+        <div class="c-nav__bg c-nav__bg--inverse"></div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

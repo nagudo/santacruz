@@ -4,22 +4,24 @@
 
 /* Button */
 .c-button {
-    background-color: var(--white);;
-    border: 1px solid var(--black);
-    display: inline-block;
-    font-family: var(--font-magenta);
+    background-color: var(--white);
+    display: block;
+    font-family: var(--font-pwscratchedfont);
+    font-size: var(--text-xl);
     text-align: center;
     text-decoration: none;
-    padding: var(--space-m);
+    padding: calc(.5 * var(--space-m));
+    width: 100%;
 }
 
 .c-button--primary {
     background-color: var(--primary);
-    color: var(--white);
+    color: var(--black);
 }
 
 .c-button--simple {
     border-color: transparent;
+    font-size: var(--text-l);
     padding: 0;
 }
 
@@ -30,9 +32,37 @@
     text-decoration: none;
 }
 
-.c-nav__img {
+.c-nav__bg {
     position: absolute;
-    z-index: -1;
+    width: 100%;
+}
+.c-nav__bg::before {
+    background-color: var(--primary);
+    background-size: cover;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    content: '';
+
+    position: absolute;
+    height: 64px;
+    width: 100%;
+}
+
+.c-nav__bg::after {
+    background-color: var(--primary);
+    background-size: cover;
+    clip-path: polygon(calc(100% - 50px) 0, 100% 0, 100% 100%);
+    content: '';
+    display: block;
+    height: 64px;
+}
+
+.c-nav__bg--inverse {
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+
+    position: relative;
 }
 
 .c-nav__wrapper {
@@ -118,6 +148,7 @@
     height: 40px;
     line-height: 40px;
     min-width: 95px;
+    margin-bottom: var(--space-s);
     padding-left: var(--space-s);
     padding-right: var(--space-s);
 }
@@ -128,22 +159,23 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.c-filters__item:not(:first-child):not(:last-child) {
-    margin: 0 var(--space-s);
+.c-filters__item--easy {
+    background: rgba(var(--easy), .2);
+    border-color: rgb(var(--easy));
 }
 
 .c-filters__item--medium {
-    background: rgba(var(--medium), .1);
+    background: rgba(var(--medium), .2);
     border-color: rgb(var(--medium));
 }
 
 .c-filters__item--hard {
-    background: rgba(var(--hard), .1);
+    background: rgba(var(--hard), .2);
     border-color: rgb(var(--hard));
 }
 
 .c-filters__item--very-hard {
-    background: rgba(var(--very-hard), .1);
+    background: rgba(var(--very-hard), .2);
     border-color: rgb(var(--very-hard));
 }
 

@@ -23,16 +23,20 @@
     bottom: -3px;
 }
 
+.o-cards__item--easy h3 {
+    background: rgba(var(--easy), .7);
+}
+
 .o-cards__item--medium h3 {
-    background: rgba(var(--medium), .6);
+    background: rgba(var(--medium), .7);
 }
 
 .o-cards__item--hard h3 {
-    background: rgba(var(--hard), .6);
+    background: rgba(var(--hard), .7);
 }
 
 .o-cards__item--very-hard h3 {
-    background: rgba(var(--very-hard), .6);
+    background: rgba(var(--very-hard), .7);
 }
 
 @media only screen and (min-width: 500px) {

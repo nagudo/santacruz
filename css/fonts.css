@@ -2,14 +2,14 @@
 /* --------------------------------- Fonts --------------------------------- */
 
 @font-face {
-    font-family: 'MagentaFont';
+    font-family: 'PWScratchedfont';
     font-weight: normal;
-    src: url('fonts/Magenta/Magenta.eot');
-    src: url('fonts/Magenta/Magenta.eot?#iefix') format('eot'),
-        url('fonts/Magenta/Magenta.woff') format('woff'),
-        url('fonts/Magenta/Magenta.woff2') format('woff2'),
-        url('fonts/Magenta/Magenta.ttf') format('truetype'),
-        url('fonts/Magenta/Magenta.svg') format('svg');
+    src: url('fonts/PWScratchedfont/PWScratchedfont.eot');
+    src: url('fonts/PWScratchedfont/PWScratchedfont.eot?#iefix') format('eot'),
+        url('fonts/PWScratchedfont/PWScratchedfont.woff') format('woff'),
+        url('fonts/PWScratchedfont/PWScratchedfont.woff2') format('woff2'),
+        url('fonts/PWScratchedfont/PWScratchedfont.ttf') format('truetype'),
+        url('fonts/PWScratchedfont/PWScratchedfont.svg') format('svg');
 }
 
 @font-face {

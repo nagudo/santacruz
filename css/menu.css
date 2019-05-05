@@ -24,7 +24,7 @@
 }
 
 .o-nav__items {
-    font-family: var(--font-magenta);
+    font-family: var(--font-pwscratchedfont);
     margin-top: calc(4 * var(--space-m));
     text-align: center;
 }
@@ -34,7 +34,8 @@
 }
 
 .o-nav__items li a {
-    color: var(--white);
+    color: var(--black);
+    font-size: var(--text-xl);
     text-decoration: none;
 }
 

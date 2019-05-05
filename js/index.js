@@ -45,12 +45,22 @@ var app = {
 
 app.initialize();
 
+function loadMenu() {
+    var includes = $('[data-include]');
+    jQuery.each(includes, function () {
+        var file = 'views/' + $(this).data('include') + '.html';
+        $(this).load(file);
+    });
+}
+
 function toggleMenu() {
     $('.o-nav__menu').toggleClass('o-nav__menu--visible');
     $('.app').toggleClass('l-scroll--hide');
 }
 
 (function ($) {
+    //loadMenu();
+
     $("#navButton").click(function () {
         toggleMenu();
         $(this).toggleClass('c-nav__button--active');
