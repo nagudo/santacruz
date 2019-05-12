@@ -39,7 +39,7 @@
 .home__button {
     border: none;
     flex-grow: 1;
-}
+}   
 
 @media only screen and (min-width: 500px) {
     .home__image {
