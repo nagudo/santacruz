@@ -147,10 +147,10 @@
     border: 2px solid var(--grey);
     height: 40px;
     line-height: 40px;
-    min-width: 95px;
+    min-width: 85px;
     margin-bottom: var(--space-s);
-    padding-left: var(--space-s);
-    padding-right: var(--space-s);
+    padding-left: calc(var(--space-s) / 2);
+    padding-right: calc(var(--space-s) / 2);
 }
 
 .c-filters__item:focus {
