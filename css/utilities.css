@@ -27,6 +27,10 @@
     font-family: var(--font-pwscratchedfont);
 }
 
+.u-text--easy {
+    color: rgba(var(--easy));
+}
+
 .u-text--medium {
     color: rgba(var(--medium));
 }
