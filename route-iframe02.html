@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
@@ -13,17 +14,17 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="css/fonts/fontawesome-free-5.7.2-web/css/solid.min.css">
-    <title>Vive Santa Cruz</title>
+    <title>Vive Santa Cruz - Mapa</title>
 </head>
 
-<body>
+<body onload="onBodyLoad()">
     <div class="app about">
         <div class="c-nav">
             <div class="c-nav__bg"></div>
             <div class="c-nav__wrapper">
                 <div id="navButton" class="c-nav__button">
                     <div class="c-nav__button--bar"></div>
-                </div>
+                </div>                
             </div>
             <div class="o-nav__menu">
                 <ul class="o-nav__items o-nav__items--primary">
@@ -39,60 +40,26 @@
                 </ul>
             </div>
         </div>
-
         <div class="l-page u-text--center about__wrapper">
-            <a class="c-button c-button--simple" href="routes.html"> <span class="fas fa-arrow-left"></span>Volver a la lista</a>
+            <a class="c-button c-button--simple" href="route-detail02.html"> <span class="fas fa-arrow-left"></span>Volver al detalle</a>
             <div class="u-clear--m"></div>
+           
+            <div class="u-clear--s"></div>
             <div class="l-page__item--out">
-                <h2 class="o-route__title">NombreDeLaRuta</h2>
+                <h2 class="o-route__title">Casa de la Mora</h2>
             </div>
-            <h3 class="u-text--easy">DIFICULTAD</h3>
+            <h3 class="u-text--easy">FÁCIL</h3>
             <div class="u-clear--m"></div>
-
-            <div class="l-page__item--out">
-                <img src="img/fotosrutas/01imagenes.jpg" alt="Detalles" title="Detalles" />
-            </div>
-
-            <div class="o-details">
-                <div class="o-details__item">
-                    <div>Longitud total</div>
-                    <div class="u-text--easy">0000 m</div>
-                </div>
-                <div class="o-details__item">
-                    <div>Desnivel positivo</div>
-                    <div class="u-text--easy">000 m</div>
-                </div>
-                <div class="o-details__item">
-                    <div>Desnivel negativo</div>
-                    <div class="u-text--easy">000 m</div>
-                </div>
-            </div>
-            <p>
-                PARRAFO    
-            </p>
+            <iframe src="https://www.google.com/maps/d/u/5/embed?mid=1Op8lV0ENvGW5e3uJUJ4EkOOIFSpxxGnp" width="100%" height="480"></iframe>
             <div class="u-clear--m"></div>
-            <div class="l-page__item--out">
-                <img src="img/maps/01mapa.jpg" alt="Mapa" title="Mapa" />
+            <div class="text-center">
+                Pulsa el icono [  ] para iniciar ruta
             </div>
             <div class="u-clear--m"></div>
-            <p>
-                PARRAFO
-            </p>
-            <div class="u-clear--m"></div>
-            <p>
-                PARRAFO
-            </p>
-            <div class="u-clear--m"></div>
-            <p>
-                PARRAFO
-            </p>
-            <div class="u-clear--m"></div>
-            <div class="l-page__item--out">
-                <img src="img/profiles/01perfil.jpg" alt="Perfil" title="Perfil" />
-            </div>
+            <a class="" href="https://es.wikiloc.com/rutas-carrera-por-montana/02-casa-de-la-mora-36249260">Abrir ruta en Wikiloc <span class="u-text--small fas fa-external-link-alt"></span></a>
             <div class="u-clear--m"></div>
             <div class="l-page__item--out ">
-                <a class="c-button c-button--primary" href="route-iframe00.html">INICIAR RUTA</a>
+                <a class="c-button c-button--primary" onclick="fileDownload('tracks/02.casa.de.la.mora.GPX')">DESCARGAR GPX</a>
             </div>
             <div class="u-clear--s"></div>
         </div>
@@ -101,6 +68,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/download.js"></script>
 </body>
 
 </html>
