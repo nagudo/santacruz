@@ -1,0 +1,26 @@
+/************************/
+/****** Components ******/
+/************************/
+
+/* Button */
+.c-button {
+    background-color: var(--white);
+    display: block;
+    font-family: var(--font-pwscratchedfont);
+    font-size: var(--text-xl);
+    text-align: center;
+    text-decoration: none;
+    padding: calc(.5 * var(--space-m));
+    width: 100%;
+}
+
+.c-button--primary {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+.c-button--simple {
+    border-color: transparent;
+    font-size: var(--text-l);
+    padding: 0;
+}

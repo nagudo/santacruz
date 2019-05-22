@@ -1,7 +1,7 @@
 /* Styles for ROUTE DETAIL page */
 .o-route__title {
     border-bottom: none;
-    font-family: var(--font-helvetica--light);
+    font-family: var(--font-pwscratchedfont);
     font-size: calc(1.5 * var(--text-l));
     line-height: calc(1.5 * var(--text-l));
     margin-bottom: calc(.5 * var(--space-s));

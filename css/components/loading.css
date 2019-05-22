@@ -1,0 +1,16 @@
+/************************/
+/****** Components ******/
+/************************/
+
+/* Loading */
+
+.c-loading-iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.c-loading {
+    background: url("../../img/icons/earth.gif") no-repeat 50% 0%;  /* Thank you Mantas! - http://mantasbac.dribbble.com/ */
+    height: 480px;
+    width: 100%;
+}
