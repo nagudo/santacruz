@@ -10,24 +10,26 @@
 }
 
 .c-nav__bg {
+    overflow: hidden;
     position: absolute;
     width: 100%;
 }
 .c-nav__bg::before {
     background-color: var(--primary);
     background-size: cover;
-    clip-path: polygon(0 0, 0 100%, 100% 0);
     content: '';
-
+    transform: rotate(-7deg);
+    transform-origin: bottom left;
     position: absolute;
     height: 64px;
-    width: 100%;
+    width: 110%;
 }
 
 .c-nav__bg::after {
     background-color: var(--primary);
     background-size: cover;
-    clip-path: polygon(calc(100% - 50px) 0, 100% 0, 100% 100%);
+    transform: rotate(45deg);
+    transform-origin: bottom right;
     content: '';
     display: block;
     height: 64px;
