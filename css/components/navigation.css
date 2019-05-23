@@ -10,24 +10,26 @@
 }
 
 .c-nav__bg {
+    overflow: hidden;
     position: absolute;
     width: 100%;
 }
 .c-nav__bg::before {
     background-color: var(--primary);
     background-size: cover;
-    clip-path: polygon(0 0, 0 100%, 100% 0);
     content: '';
-
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
     position: absolute;
     height: 64px;
-    width: 100%;
+    width: 110%;
 }
 
 .c-nav__bg::after {
     background-color: var(--primary);
     background-size: cover;
-    clip-path: polygon(calc(100% - 50px) 0, 100% 0, 100% 100%);
+    transform: rotate(45deg);
+    transform-origin: bottom right;
     content: '';
     display: block;
     height: 64px;
@@ -102,6 +104,10 @@
     .c-nav__img {
         margin-top: -4vw;
     }
+
+    .c-nav__bg::before {
+        transform: rotate(-7deg);
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -109,11 +115,26 @@
         margin-top: -5vw;
         transform: scaleX(1.2);
     }
+
+    .c-nav__bg::before {
+        transform: rotate(-5deg);
+    }
 }
 
 @media only screen and (min-width: 800px) {
     .c-nav__img {
         margin-top: -7vw;
         transform: scaleX(1.5);
+    }
+
+    .c-nav__bg::before {
+        transform: rotate(-4deg);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .c-nav__bg::before {
+        transform: rotate(-3.5deg);
     }
 }
