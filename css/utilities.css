@@ -28,19 +28,19 @@
 }
 
 .u-text--easy {
-    color: rgba(var(--easy));
+    color: rgb(var(--easy));
 }
 
 .u-text--medium {
-    color: rgba(var(--medium));
+    color: rgb(var(--medium));
 }
 
 .u-text--hard {
-    color: rgba(var(--hard));
+    color: rgb(var(--hard));
 }
 
 .u-text--very-hard {
-    color: rgba(var(--very-hard));
+    color: rgb(var(--very-hard));
 }
 
 /* Visibility */
