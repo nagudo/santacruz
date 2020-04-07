@@ -7,11 +7,11 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .home::before {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .3); /* Comenta esta linea si quieres quitar la capita gris */
     content: '';
 
     position: absolute;
@@ -39,7 +39,15 @@
 .home__button {
     border: none;
     flex-grow: 1;
-}   
+}  
+
+/* Descomenta esto para poner la etiqueta blanca debajo del logo */
+/*.home__image {
+    background: rgba(255, 255, 255, .4);
+    border-radius: calc( 2 * var(--radius));
+    margin-top: var(--space-m);
+    width: 80%;
+}*/
 
 @media only screen and (min-width: 500px) {
     .home__image {
